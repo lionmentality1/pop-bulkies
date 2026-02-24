@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pop The Bulkies!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="leaderboard">
+    <div class="lb-title">🏆 Leaderboard</div>
+
+    <div class="lb-save">
+      <input id="lbName" type="text" maxlength="16" placeholder="your name..." />
+      <button id="lbSaveBtn" type="button">Save</button>
+    </div>
+
+    <div class="lb-hint" id="lbHint">type name + press Save to record scores</div>
+    <div class="lb-list" id="lbList"></div>
+    <div class="lb-rankline" id="lbRankLine"></div>
+  </div>
+
+  <div class="game-container">
+    <header>
+      <h1>Pop The Bulkies!</h1>
+      <div class="stats">
+        <div class="stat">
+          <span class="label">Score:</span>
+          <span id="score">0</span>
+        </div>
+        <div class="stat">
+          <span class="label">Time:</span>
+          <span id="time">60</span>s
+        </div>
+        <div class="stat">
+          <span class="label">High Score:</span>
+          <span id="highscore">0</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="game-board">
+      <div class="hole" data-hole="0"><div class="creature"></div></div>
+      <div class="hole" data-hole="1"><div class="creature"></div></div>
+      <div class="hole" data-hole="2"><div class="creature"></div></div>
+      <div class="hole" data-hole="3"><div class="creature"></div></div>
+      <div class="hole" data-hole="4"><div class="creature"></div></div>
+      <div class="hole" data-hole="5"><div class="creature"></div></div>
+      <div class="hole" data-hole="6"><div class="creature"></div></div>
+      <div class="hole" data-hole="7"><div class="creature"></div></div>
+      <div class="hole" data-hole="8"><div class="creature"></div></div>
+    </div>
+
+    <div class="controls">
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div class="message" id="message"></div>
+  </div>
+
+  <div class="hammer" id="hammer"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>
